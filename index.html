@@ -1,76 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Website</title>
+    <title>Trường Đại Học</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-o+HJ4r+qd+OW9FXI6BqqSwlsYjyHvxj7uwajSUQIVLpwblDf/6v8xI7cJ6F64Y7n" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"> <!-- File CSS của bạn -->
 </head>
 <body>
-    <header>
-        <div class="top">
-            <div class="container">
-                <div class="header-top row">
-                    <img class="logo" src="https://edu2review.com/assets/logo.svg" alt="University Logo">
-                    <nav>
-                        <ul>
+    <div class="app">
+        <header>
+            <div class="top">
+                <div class="container">
+                    <div class="header-top row">
+                        <p>EDUcation</p>
+                        <ul class="menu">
                             <li><a href="#">Trang chủ</a></li>
                             <li><a href="#">Học Online</a></li>
                             <li><a href="#">EduMember</a></li>
                             <li><a href="#">Trường học</a></li>
                             <li><a href="#">Khác</a></li>
                         </ul>
-                    </nav>
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>  
-        </div>
-        <div class="header-text">
-            <h1>Welcome to Our University</h1>
-            <p>Discover the best education opportunities with us</p>
-        </div>
-    </header>
-    
-    <!-- Course Section -->
-    <section class="course">
-        <div class="container">
-            <h2>Featured Courses</h2>
-            <div class="course-items">
-                <!-- Course Item 1 -->
-                <div class="course-item">
-                    <img src="https://media.hdu.edu.vn/Media/2005_knn.hdu.edu.vn/FolderFunc/202105/Images/research-20210524095748-e.jpg" alt="Course Image">
-                    <h3>Communication Skills Course</h3>
-                    <p>Enhance your communication skills with our comprehensive course.</p>
-                    <a href="#" class="btn">Learn More</a>
-                </div>
-                <!-- Course Item 2 -->
-                <div class="course-item">
-                    <img width="300" src="https://media.hdu.edu.vn/Media/2005_knn.hdu.edu.vn/FolderFunc/202304/Images/bao-cao-20230420050943-e.jpg">
-                    <h3>Business Analysis Course</h3>
-                    <p>Learn the fundamentals of business analysis and strategic decision-making.</p>
-                    <a href="#" class="btn">Learn More</a>
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>  
+            </div>
+            <div class="bg-image"></div>
+            <img width="200" src="https://media.hdu.edu.vn/Media/2005_knn.hdu.edu.vn/FolderFunc/202202/Images/5-20220210075808-e.gif" alt="Ảnh đại diện">
+           
+            <div class="header-text">
+                <p>Tìm kiếm nơi phù hợp</p>
+                <h1>Học phí tốt nhất</h1>
+                <form>
+                    <input type="text" class="form-input" placeholder="Địa điểm bạn tìm?">
+                    <input type="text" class="form-input" placeholder="Bạn muốn học?">
+                    <input type="text" class="form-input" placeholder="Khóa học cần tìm?">
+                    <button type="submit">Tìm kiếm</button>
+                </form>
+                <section id="intro">
+                    <div class="container">
+                        <h2>Chào mừng bạn đến với EDUcation</h2>
+                        <p>Chúng tôi cam kết mang lại một môi trường học tập chất lượng và đa dạng giúp bạn phát triển bản thân và đạt được mục tiêu học tập của mình</p>
+                        <a href="#" class="btn-intro">Tìm hiểu thêm</a>
+                    </div>
+                </section>
+                
+                 <div class="img-header">
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
+        
+        <section class="course">
+            <div class="container">
+                <h2>Khoá Học Giao Tiếp</h2>
+                <div class="course-items">
+                    <div class="course-item">
+                        <img width="150" src="https://edu2review.com/upload/school-images/trung-tam-anh-ngu-talkfirst/img/792w-2-1570611420-trung-tam-anh-ngu-talkfirst.jpg">
+                        <h3>Trung Tâm Anh Ngữ TalkFirst</h3>
+                        <p>Mô tả khóa học...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                    <div class="course-item">
+                        <img width="150" src="https://edu2review.com/upload/school-images/trung-tam-dao-tao-tieng-anh-kos-english-center/img/792w-5-1563874232-trung-tam-dao-tao-tieng-anh-kos-english-center.jpg">
+                        <h3>Trung tâm đào tạo tiếng Anh KOS English Center</h3>
+                        <p>Mô tả khóa học...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                    <div class="course-item">
+                        <img width="150" src="https://edu2review.com/upload/school-images/trung-tam-simple-english/img/792w-7-1659691125-trung-tam-simple-english.jpg" >
+                        <h3>Trung tâm Simple English</h3>
+                        <p>Mô tả khóa học...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+                <h2>Top Khóa Học Trẻ Em</h2>
+                <div class="course-items">
+                    <div class="course-item">
+                        <img width="300" src="https://edu2review.com/upload/school-images/anh-ngu-quoc-te-ocean-edu/img/792w-0-1571125594-anh-ngu-quoc-te-ocean-edu.jpg">
+                        <h3>Anh Ngữ Quốc Tế Ocean Edu</h3>
+                        <p>Mô tả khóa học...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                    <div class="course-item">
+                        <img width="300" src="https://edu2review.com/upload/school-images/trung-tam-ngoai-ngu-khoa-tri/img/792w-4-1548214177-trung-tam-ngoai-ngu-khoa-tri.jpg">
+                        <h3>Trung Tâm Ngoại Ngữ Khoa Trí</h3>
+                        <p>Mô tả khóa học...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                    <div class="course-item">
+                        <img width="300" src="https://edu2review.com/upload/school-images/trung-tam-ngoai-ngu-thong-minh-yola/img/792w-0-1638417857-trung-tam-ngoai-ngu-thong-minh-yola.jpg">
+                        <h3>Trung tâm Anh ngữ YOLA</h3>
+                        <p>Mô tả khóa học...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+                <h2>Top khóa học IELTS</h2>
+                <div class="course-items">
+                    <div class="course-item">
+                        <img width="300" src="https://edu2review.com/upload
+                        /school-images/trung-tam-ielts-dinh-luc/img/792w-0-1598260791-trung-tam-ielts-dinh-luc.jpg">
+                        <h3>Học Viện DOL English-IELTS Đình Lực</h3>
+                        <p>Mô tả khóa học...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                    <div class="course-item">
+                        <img width="300" src="https://edu2review.com/upload/school-images/trung-tam-global-manpower/img/792w-1-trung-tam-global-manpower.jpg">
+                        <h3>Trung Tâm Global Manpower</h3>
+                        <p>Mô tả khóa học...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                    <div class="course-item">
+                        <img width="300" src="https://edu2review.com/upload/school-images/trung-tam-luyen-thi-ielts-fighter/img/792w-1-trung-tam-luyen-thi-ielts-fighter.jpg">
+                        <h3>Trung Tâm Luyện Thi lelts Fighter</h3>
+                        <p>Mô tả khóa học...</p>
+                        <a href="#" class="btn">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Additional Content Section -->
-    <section class="additional-content">
-        <div class="container">
-            <h2>Experience Excellence in Education</h2>
-            <p>Our university offers a wide range of courses and opportunities for academic and personal growth.</p>
-            <img src="https://www.modul.ac.at/uploads/pics/Master.jpg" alt="Additional Image">
-        </div>
-    </section>
+        <section class="news">
+            <div class="container">
+                <img width="70" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPqEEI_x50vlET-ur5DsLdnNmprdM-L9HTUw&usqp=CAU">
+                
+                <div class="news-items">
+                    <div class="news-item">
+                        <img width="1000" src="https://lh4.googleusercontent.com/Rcwj3pDB8xZ3VN45vEl_0Kb_LZX8r_04Z7Kox1kA_aGMy_5-RoizUL0IMaovLtot9nSKZbIfkRk0EmvKYjDi-GF-__u-0mx4nST9fzQRFHu_TcQMdE-vg-cWidjkWPdk9Vm0gwS2" alt="Hình ảnh tin tức">
+                        <h3>Tin Hot: Đại Học Harvard đã được mua lại!</h3>
+                        <p>Hôm nay Harvard có một thay đổi lớn. Anh Nguyễn Hữu Đại đã mua lại đại học Harvard và đã ngồi lên ghế hiệu trưởng.</p>
+                        <a href="#" class="btn">Xem thêm</a>
+                    </div>
+                    <div class="news-item">
+                        <img width="1000" src="https://static-images.vnncdn.net/files/publish/2022/8/24/giao-duc-dai-hoc-1259.jpeg" alt="Hình ảnh tin tức">
+                        <h3>Hôm nay 29/2/2024</h3>
+                        <p>Hôm nay đã có 10 tỉ học sinh của đại học Harvard vừa đỗ đại học mới mức điểm lv max sau khi anh Nguyễn Hữu Đại ngồi lên ghế hiệu trưởng.</p>
+                        <a href="#" class="btn">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <h2>Liên Hệ</h2>
+                <p>Email: ndai411205@gmail.com</p>
+                <p>Điện thoại: 0387736431</p>
+                <p>Địa chỉ: Hà Nội</p>
+                <p>&copy; 2024 EDUcation. All rights reserved. </p>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 University. All rights reserved.</p>
-        </div>
-    </footer>
-    
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

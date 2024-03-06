@@ -36,11 +36,31 @@ document.addEventListener('DOMContentLoaded', function() {
             // Handle response data as needed
             console.log('Response:', data);
         })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    }
-
-    // Add event listener to the form submit event
+        .catch(error => {// Lấy tất cả các phần tử có class là 'course-item' và 'news-item'
+            const courseItems = document.querySelectorAll('.course-item');
+            const newsItems = document.querySelectorAll('.news-item');
+            
+            // Thêm sự kiện khi di chuột qua các phần tử
+            courseItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.transform = 'scale(1.05)';
+                    item.style.transition = 'transform 0.3s ease';
+                });
+            
+                item.addEventListener('mouseleave', () => {
+                    item.style.transform = 'scale(1)';
+                });
+            });
+            
+            newsItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    item.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+                    item.style.transition = 'box-shadow 0.3s ease';
+                });
+            
+                item.addEventListener('mouseleave', () => {
+                    item.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+                });
+            });
     document.querySelector('form').addEventListener('submit', handleFormSubmission);
 });
